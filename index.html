@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>光储充能量管理与运维监控平台</title>
+    <link type="text/css" rel="stylesheet" href="lib/reset.css">
+    <link type="text/css" rel="stylesheet" href="css2/index1.css">
+</head>
+<body onload="startTime()">
+<header>
+    <div class="title clearfix">
+        <a href="#" class="logo"><img src="img/logo1.png" alt="logo"></a>
+        <div class="user">
+            <div class="denglu"></div>
+            <div class="username">admin</div>
+            <i></i>
+            <ul class="dropdown-menu">
+                <li><a href="#" id="forgetPsw_btn">进入控制台</a></li>
+                <li><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="time">
+        <span class="now-date">2017年11月26日</span><span class="now-time">18:24:56</span><span class="now-week">星期四</span>
+    </div>
+</header>
+<div class="top-menu">
+    <p class="now-data">当前展示：
+        <span>总发电量：256KWp</span>
+        <span>当前发电量：39KWp</span>
+    </p>
+    <div class="menu-list">
+        <a href="index1.html">光伏</a>
+        <a href="html2/level2.html">充电</a>
+        <a href="html2/level3.html">储能</a>
+        <a href="html2/level4.html">资产管理</a>
+        <a href="html2/level5.html">调度策略</a>
+        <a href="html2/level6.html">交易结算</a>
+        <a href="html2/level7.html">运营维护</a>
+    </div>
+</div>
+<div class="left-box">
+    <div class="l-left">
+        <div class="l-top">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <!--图表-->
+            <div class="main">
+                <img src="img/t1.png" alt="图表" style="width: 100%;height: 100%;">
+            </div>
+        </div>
+        <div class="l-mid">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <!--图表-->
+            <div class="main">
+                <img src="img/t2.png" alt="图表" style="width: 100%;height: 100%;">
+            </div>
+        </div>
+        <div class="l-bot">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <!--图表-->
+            <div class="main">
+                <img src="img/t3.png" alt="图表" style="width: 100%;height: 100%;">
+            </div>
+        </div>
+    </div>
+    <div class="l-right">
+        <div class="r-top">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <p class="map-title">光充储站点分布</p>
+            <div class="map-box">
+                <div class="map" style="background: url(img/map.png) no-repeat center;background-size: 100% 100%;">
+
+                </div>
+                <div class="location1">
+                    <div class="l-tip"></div>
+                    <p class="l-name">上海国际汽车城嘉定站点</p>
+                </div>
+                <div class="location2">
+                    <div class="l-tip"></div>
+                    <p class="l-name">上海国际汽车城嘉定站点</p>
+                </div>
+                <div class="location3">
+                    <div class="l-tip"></div>
+                    <p class="l-name">上海国际汽车城嘉定站点</p>
+                </div>
+                <div class="map-legend">
+                    <a href="javascript:;" class="legend grey">光伏</a>
+                    <a href="javascript:;" class="legend">储能</a>
+                    <a href="javascript:;" class="legend">充电桩</a>
+                </div>
+            </div>
+        </div>
+        <div class="r-bot">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <!--图表-->
+            <div class="main">
+                <p class="i-title">用能分析</p>
+                <div class="one-third">
+                    <img src="img/1.png" alt="图表" style="width: 90%;height: 80%;margin-top: 10%;">
+                </div>
+                <div class="one-third">
+                    <img src="img/1.png" alt="图表" style="width: 90%;height: 80%;margin-top: 10%;">
+                </div>
+                <div class="one-third">
+                    <img src="img/1.png" alt="图表" style="width: 90%;height: 80%;margin-top: 10%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="right-box">
+    <div class="top">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <div class="main" style="padding: 10px;">
+            <ul class="sys-data clearfix">
+                <li>
+                    <div class="sys-data-item">
+                        <p>总站点数(个)</p>
+                        <div>3</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>光伏装机容量</p>
+                        <div>125.6KWp</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>储能装机容量</p>
+                        <div>250KW/</br>500KWh</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>电池装机容量</p>
+                        <div>183KW/</br>400KWh</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>总用电负荷</p>
+                        <div>284KW</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>接入充电桩(个)</p>
+                        <div>7</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>光伏发电量</p>
+                        <div>125.6KWp</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>储能存储电量</p>
+                        <div>125.6KWp</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>充电服务次数</p>
+                        <div>128次</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>储能释放电量</p>
+                        <div>125.6KWp</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>原油</p>
+                        <div>125.6KWp</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>汽油</p>
+                        <div>125.6KWp</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>二氧化碳减排</p>
+                        <div>125.6KWp</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sys-data-item">
+                        <p>树木</p>
+                        <div>125.6KWp</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <!--图表-->
+        <div class="main">
+            <img src="img/t6.png" alt="图表" style="width: 100%;height: 100%;">
+        </div>
+    </div>
+</div>
+<script type="text/javascript" rel="script" src="lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" rel="script">
+    //时间
+    function startTime() {
+        //年月日
+        var today=new Date();
+        var nYear = today.getFullYear();
+        var nMonth = today.getMonth()+1;
+        var nDay = today.getDate();
+        $('.now-date').html(nYear+'年'+nMonth+'月'+nDay+'日');
+        //星期
+        switch(today.getDay()){
+            case 1:
+                $('.now-week').html('星期一');
+                break;
+            case 2:
+                $('.now-week').html('星期二');
+                break;
+            case 3:
+                $('.now-week').html('星期三');
+                break;
+            case 4:
+                $('.now-week').html('星期四');
+                break;
+            case 5:
+                $('.now-week').html('星期五');
+                break;
+            case 6:
+                $('.now-week').html('星期六');
+                break;
+            case 7:
+                $('.now-week').html('星期天');
+                break;
+            default:
+                break;
+        }
+        //时分秒
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        m=checkTime(m);
+        s=checkTime(s);
+        $('.now-time').html(h+":"+m+":"+s);
+        t=setTimeout('startTime()',500);
+    }
+    function checkTime(i) {
+        if (i<10) {i="0" + i}
+        return i;
+    }
+    $(function () {
+        //控制台
+        $('.username').click(function(){
+            $('.dropdown-menu').slideToggle(150);
+        });
+    });
+
+    //图例切换颜色
+    $('.legend').on('click',function () {
+        $(this).toggleClass('grey');
+    });
+
+    /*sys-data*/
+    var liH = $('.sys-data').height();
+    $('.sys-data').find('li').height(liH/7);
+    $(window).resize(function() {
+        var liH = $('.sys-data').height();
+        $('.sys-data').find('li').height(liH/7);
+    });
+</script>
+</body>
+</html>
