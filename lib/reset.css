@@ -1,0 +1,72 @@
+@font-face {
+	font-family: "PingFang SC Regular";
+	src: url(PingFangRegular.ttf);
+}
+html{
+	color:#333;
+	background:#FFF;
+}
+body, div, dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6, pre, code,form, fieldset, legend, input, button,textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+/*微软雅黑*/
+body {
+	font-family:"PingFang Regular","Microsoft YaHei","微软雅黑","Microsoft JhengHei","华文细黑","STHeiti","MingLiu";
+}
+fieldset, img{
+	border:0;
+}
+input,select,textarea{
+	outline:none;
+}
+textarea{
+	resize:none;
+}
+a{
+	text-decoration:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,ul,li{
+	list-style:none;
+}
+
+caption,
+th {
+	text-align:left;
+}
+/* 清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+  }
+.clearfix:after {
+    clear: both;
+  }
+i{
+	text-decoration:none;
+	font-style: normal;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
