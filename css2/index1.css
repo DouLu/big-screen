@@ -1,0 +1,497 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    min-width: 1280px;
+    background: url(../img/body-bg.png) no-repeat center;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    z-index: 999;
+    top:0;
+    left: 2.5%;
+    right: 2.5%;
+    height: 75px;
+}
+header .title{
+    height: 40px;
+    background: url(../img/title.png) no-repeat bottom center;
+    background-size: 413px 28px;
+}
+.logo{
+    float: left;
+    overflow: hidden;
+    margin: 8px 0;
+}
+.logo img{
+    float: left;
+    width: auto;
+    height: 24px;
+}
+.user{
+    float: right;
+    position: relative;
+    margin: 8px 0;
+}
+.user .denglu{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/login-icon.png) no-repeat top center;
+    background-size: cover;
+}
+.user i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    background: url(../img/xia.png) no-repeat top center;
+    background-size: contain;
+    transform: translateY(3px);
+}
+.user .username {
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 5px;
+    color: #fff;
+    font-size: 16px;
+    transform: translateY(-4px);
+}
+.user .dropdown-menu {
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px rgba(1, 254, 254, 0.7);
+    display: none;
+    float: left;
+    font-size: 14px;
+    left: -10px;
+    width: 130px;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    text-shadow: none;
+    top: 150%;
+    z-index: 1000;
+    color: #fff;
+    background-color: rgba(75,130,204,.5);
+}
+.dropdown-menu > li > a {
+    border-radius: 3px;
+    color: inherit;
+    line-height: 25px;
+    margin: 4px;
+    text-align: left;
+    font-weight: normal;
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.time{
+    height: 34px;
+    line-height: 34px;
+    background: url(../img/title-line.png) no-repeat center;
+    background-size: 1280px 34px;
+    text-align: center;
+}
+.time span{
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+    margin-left: 15px;
+}
+.top-menu{
+    position: absolute;
+    top:40px;
+    left: 2.5%;
+}
+.now-data{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+.now-data span{
+    margin-right: 20px;
+}
+.menu-list{
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.menu-list a{
+    display: inline-block;
+    width: 98px;
+    height: 26px;
+    margin-right: 20px;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    background: url(../img/menu-bg.png) no-repeat center;
+    background-size: 98px 26px;
+    text-align: center;
+}
+.menu-list a:hover{
+    color: #0057ea;
+}
+.line1,.line2,.line3,.line4{
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    /*animation: test 1s infinite linear;*/
+}
+.line1{
+    top:-8px;
+    left: -8px;
+    background: url(../img/line1.png) no-repeat center;
+    background-size: 31px 31px;
+}
+.line2{
+    top:-8px;
+    right: -8px;
+    background: url(../img/line2.png) no-repeat center;
+    background-size: 31px 31px;
+}
+.line3{
+    bottom:-8px;
+    right: -8px;
+    background: url(../img/line3.png) no-repeat center;
+    background-size: 31px 31px;
+}
+.line4{
+    bottom:-8px;
+    left: -8px;
+    background: url(../img/line4.png) no-repeat center;
+    background-size: 31px 31px;
+}
+/*@keyframes test {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: .7;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .3;
+    }
+    100%{
+        opacity: 0;
+    }
+}*/
+.left-box{
+    position: absolute;
+    top: 130px;
+    left: 2.5%;
+    right: 30%;
+    bottom: 0;
+}
+.right-box{
+    position: absolute;
+    top: 50px;
+    left: 72.5%;
+    right: 2.5%;
+    bottom: 0;
+}
+.right-box>div,.left-box>div>div{
+    box-sizing: border-box;
+    border: solid 1px #0057ea;
+}
+.right-box .top{
+    position: absolute;
+    top:0;
+    width: 100%;
+    bottom: 34%;
+}
+.right-box .bottom{
+    position: absolute;
+    top:69.6%;
+    width: 100%;
+    bottom: 4%;
+}
+.l-left{
+    position: absolute;
+    left:0;
+    right: 60%;
+    height: 100%;
+}
+.l-right{
+    position: absolute;
+    left: 43.2%;
+    right: 0;
+    height: 100%;
+}
+.l-top{
+    position: absolute;
+    width: 100%;
+    top:0;
+    bottom: 70%;
+}
+.l-mid{
+    position: absolute;
+    width: 100%;
+    top: 33%;
+    bottom: 37%;
+}
+.l-bot{
+    position: absolute;
+    width: 100%;
+    top: 66%;
+    bottom: 4%;
+}
+.r-top{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 37%;
+}
+.r-bot{
+    position: absolute;
+    width: 100%;
+    top: 66%;
+    bottom: 4%;
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.i-title{
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 10px;
+    position: absolute;
+    top:0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+}
+.one-third{
+    width: 33.33%;
+    float: left;
+    height: 100%;
+}
+.sys-data{
+    height: 100%;
+}
+.sys-data li{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    /*padding-top: 10px;*/
+    border-top: solid 1px #0057ea;
+}
+.sys-data-item{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top:50%;
+    transform: translateY(-50%);
+}
+.sys-data li:nth-child(2n+1){
+    border-right: solid 1px #0057ea;
+}
+.sys-data li:nth-child(-n+2){
+    border-top: none;
+}
+.sys-data p{
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    padding-left: 36px;
+}
+.sys-data li:nth-child(2n+2) p{
+    padding-left: 46px;
+}
+.sys-data div{
+    box-sizing: border-box;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #00fcff;
+}
+.sys-data li:nth-child(1) p{
+    background: url(../img/icon1.png) no-repeat 10px center;
+    background-size: 20px 20px;
+}
+.sys-data li:nth-child(2) p{
+    background: url(../img/icon2.png) no-repeat 20px center;
+    background-size: 20px 20px;
+}
+.sys-data li:nth-child(3) p{
+    background: url(../img/icon3.png) no-repeat 10px center;
+    background-size: 20px 20px;
+}
+.sys-data li:nth-child(4) p{
+    background: url(../img/icon4.png) no-repeat 20px center;
+    background-size: 20px 20px;
+}
+.sys-data li:nth-child(5) p{
+    background: url(../img/icon5.png) no-repeat 10px center;
+    background-size: 20px 20px;
+}
+.sys-data li:nth-child(6) p{
+    background: url(../img/icon6.png) no-repeat 20px center;
+    background-size: 20px 20px;
+}
+.sys-data li:nth-child(7) p{
+    background: url(../img/icon7.png) no-repeat 5px center;
+    background-size: 35px 35px;
+}
+.sys-data li:nth-child(8) p{
+    background: url(../img/icon8.png) no-repeat 20px center;
+    background-size: 20px 20px;
+}
+.sys-data li:nth-child(9) p{
+    background: url(../img/icon9.png) no-repeat 10px center;
+    background-size: 25px 25px;
+}
+.sys-data li:nth-child(10) p{
+    background: url(../img/icon10.png) no-repeat 20px center;
+    background-size: 20px 20px;
+}
+.sys-data li:nth-child(11) p{
+    background: url(../img/icon11.png) no-repeat 5px center;
+    background-size: 35px 35px;
+}
+.sys-data li:nth-child(12) p{
+    background: url(../img/icon12.png) no-repeat 15px center;
+    background-size: 35px 35px;
+}
+.sys-data li:nth-child(13) p{
+    background: url(../img/icon13.png) no-repeat 5px center;
+    background-size: 35px 35px;
+}
+.sys-data li:nth-child(14) p{
+    background: url(../img/icon14.png) no-repeat 20px center;
+    background-size: 20px 20px;
+}
+.map-title{
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+}
+.map-box{
+    height: calc(100% - 30px);
+    position: relative;
+}
+.map{
+    position: absolute;
+    z-index: 9;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.map-legend{
+    position: absolute;
+    z-index: 99;
+    width: 240px;
+    height: 30px;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0,0,0,.3);
+    text-align: center;
+}
+.legend{
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+    padding-left: 25px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.legend:before{
+    position: absolute;
+    content: '';
+    top:5px;
+    left: 0;
+    width: 20px;
+    height: 10px;
+}
+.legend:nth-child(1):before{
+    background-color: #fcff00;
+}
+.legend:nth-child(2):before{
+    background-color: #00ffea;
+}
+.legend:nth-child(3):before{
+    background-color: #00ffa2;
+}
+.legend.grey:before{
+    background-color: #333;
+}
+.location1{
+    position: absolute;
+    z-index: 99;
+    top:10%;
+    left: 20%;
+}
+.location2{
+    position: absolute;
+    z-index: 99;
+    top:30%;
+    left: 60%;
+}
+.location3{
+    position: absolute;
+    z-index: 99;
+    bottom: 30%;
+    left: 40%;
+}
+.l-tip{
+    position: absolute;
+    z-index: 99;
+    width: 56px;
+    height: 69px;
+    top:0;
+    left: 0;
+}
+.l-name{
+    position: absolute;
+    z-index: 9;
+    top:10px;
+    left: 40px;
+    height: 25px;
+    line-height: 25px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    white-space: nowrap;
+    background: url(../img/site-bg.png) no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.location1 .l-tip{
+    background: url(../img/lo-icon11.png) no-repeat center;
+    background-size: 56px 69px;
+}
+.location2 .l-tip{
+    background: url(../img/lo-icon22.png) no-repeat center;
+    background-size: 56px 69px;
+}
+.location3 .l-tip{
+    background: url(../img/lo-icon33.png) no-repeat center;
+    background-size: 56px 69px;
+}

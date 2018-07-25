@@ -1,0 +1,90 @@
+.site-name{
+    width: 78px;
+    background: url(../img/ss-title.png) no-repeat center;
+    background-size: 100%;
+}
+.container{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 90px 2.5% 50px;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow-y: scroll;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 10px;
+    background-color: transparent;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    background-color: transparent;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    background-color: #2685c9;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.site-table{
+    width: 100%;
+    max-height: 100%;
+    table-layout: fixed;
+}
+.site-table tr{
+    height: 50px;
+    text-align: center;
+}
+.site-table tr td{
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    border:solid 1px #2685c9;
+    box-shadow: 0 0 10px 1px rgba(0,198,255,0.4);
+}
+.site-table tr td:nth-child(3) select{
+    color: #00ffa8;
+}
+.site-table tr td:last-child{
+    width: 200px;
+}
+.site-table tr td a{
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    background: url(../img/confirm-icon.png) no-repeat 25px center;
+    background-size: 20px 20px;
+}
+.site-table td a:hover{
+    border-color: #00f6ff;
+    color: #00f6ff;
+    background: url(../img/confirm.png) no-repeat 25px center;
+    background-size: 20px 20px;
+}
+.site-table select{
+    display: inline-block;
+    width: 60%;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    background: none;
+    border:none;
+}
+.site-table select option{
+    color: #000;
+}

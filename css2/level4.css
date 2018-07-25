@@ -1,0 +1,295 @@
+.container{
+    position: absolute;
+    top:80px;
+    left: 0;
+    right: 0;
+    bottom:20px;
+    min-width: 1280px;
+}
+.left-content{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 2.5%;
+    right: 33.5%;
+}
+.right-content{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 69%;
+    right: 2.5%;
+}
+.line1,.line2,.line3,.line4{
+    width: 31px;
+    height: 31px;
+    position: absolute;
+}
+.line1{
+    top:-8px;
+    left: -8px;
+    background: url(../img/line1.png) no-repeat center;
+    background-size: 31px 31px;
+}
+.line2{
+    top:-8px;
+    right: -8px;
+    background: url(../img/line2.png) no-repeat center;
+    background-size: 31px 31px;
+}
+.line3{
+    bottom:-8px;
+    right: -8px;
+    background: url(../img/line3.png) no-repeat center;
+    background-size: 31px 31px;
+}
+.line4{
+    bottom:-8px;
+    left: -8px;
+    background: url(../img/line4.png) no-repeat center;
+    background-size: 31px 31px;
+}
+.i-title{
+    box-sizing: border-box;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    background: url(../img/t-tip.png) no-repeat right center;
+    background-size: 33px 19px;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 10px;
+    background-color: transparent;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    background-color: transparent;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    background-color: #136cd0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+/*告警信息表格*/
+.main-tit{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 30px);
+    font-size: 12px;
+}
+.waring-title{
+    width: 100%;
+    height: 30px;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+.waring-title p{
+    height: 30px;
+    line-height: 30px;
+    margin-left: 20px;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+}
+.waring-title .waring-title1,.waring-title .waring-title2,.waring-title .waring-title3{
+    float: right;
+    padding-left: 30px;
+}
+.waring-title1{
+    background: url(../img/waring1.png) no-repeat 7px;
+    background-size: 24px 24px;
+}
+.waring-title2{
+    background: url(../img/waring2.png) no-repeat 7px;
+    background-size: 24px 24px;
+}
+.waring-title3{
+    background: url(../img/waring3.png) no-repeat 7px;
+    background-size: 18px 18px;
+}
+.table-box{
+    position: relative;
+    height: calc(100% - 30px);
+    width: 100%;
+    box-sizing: border-box;
+}
+.ai-table{
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.ai-tbody{
+    position: relative;
+    top: 42px;
+}
+.ai-table thead,.ai-table tbody,.ai-table tr{
+    display: block;
+}
+.ai-table thead,.ai-table thead tr{
+    display: block;
+}
+.ai-table thead{
+    position: absolute;
+    z-index: 99;
+    width: calc(100% - 8px);
+}
+.ai-table thead tr td{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 16.3%;
+    text-align: center;
+    font-size: 16px;
+    background-color: #136cd0;
+    color: #fff;
+}
+.ai-table td{
+    margin-right: 3px;
+}
+.ai-table td:last-child{
+    margin-right: 0;
+}
+.ai-table tbody tr{
+    margin-top: 5px;
+}
+.ai-table tbody tr td{
+    display: inline-block;
+    vertical-align: middle;
+    width: 16.3%;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #1f2733;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ai-table tbody tr:nth-child(3n+1) td:nth-child(3){
+    color: #00f6ff;
+}
+.ai-table tbody tr:nth-child(3n+2) td:nth-child(3){
+    color: #00ff49;
+}
+.ai-table tbody tr:nth-child(3n+3) td:nth-child(3){
+    color: #ffe000;
+}
+.waring1{
+    background: url(../img/waring1.png) no-repeat center;
+    background-size: auto 70%;
+}
+.waring2{
+    background: url(../img/waring2.png) no-repeat center;
+    background-size: auto 70%;
+}
+.waring3{
+    background: url(../img/waring3.png) no-repeat center;
+    background-size: auto 64%;
+}
+.ai-table tbody tr td a{
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    background: url(../img/xq-icon.png) no-repeat 10px center;
+    background-size: 20px 20px;
+}
+.ai-table tbody tr td a:hover{
+    color: #00f6ff;
+    border-color: #00f6ff;
+    background: url(../img/xq1-icon.png) no-repeat 10px center;
+    background-size: 20px 20px;
+}
+.r-top{
+    position: relative;
+    box-sizing: border-box;
+    border: solid 1px #0057ea;
+}
+.per-avatar{
+    text-align: center;
+}
+.per-avatar img{
+    margin: 15px 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.per-info{
+    padding: 0 25px 25px;
+    box-sizing: border-box;
+}
+.per-info p{
+    float: left;
+    width: 50%;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+}
+.per-info p span{
+    color: #00ffa2;
+}
+.r-bot{
+    margin-top: 15px;
+    height: calc(100% - 270px);
+}
+/*订单表格*/
+.order-table{
+    height: calc(100% - 30px);
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.order-table table{
+    width: 100%;
+    max-height: 100%;
+    table-layout: fixed;
+}
+.order-table table{
+    background-color: rgba(49,49,49,.51);
+    text-align: center;
+}
+.order-table table thead{
+    background-color: rgba(255,255,255,.18);
+}
+.order-table table thead td{
+    height: 35px;
+    line-height: 35px;
+}
+.order-table table tr td{
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    border:solid 1px rgba(53,186,255,.5);
+}
+.order-table tbody td{
+    padding: 3px 0;
+}
+.order-table table tr td.processing{
+    color: #00ff49;
+}
+.order-table table tr td.not-processed{
+    color: #ff0005;
+}
+.order-table table tr td.completed{
+    color: #fff;
+}
