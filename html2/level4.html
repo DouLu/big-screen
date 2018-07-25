@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--页面渲染属性设置-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>光储充能量管理与运维监控平台——第四层</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="光充储能量管理与运维监控平台">
+    <meta name="description" content="光充储能量管理与运维监控平台">
+    <meta property="og:title" content="光充储能量管理与运维监控平台">
+    <meta property="og:description" content="光充储能量管理与运维监控平台">
+    <!--end-->
+    <!--页面样式文件-->
+    <link type="text/css" rel="stylesheet" href="../lib/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css2/com-header.css">
+    <link type="text/css" rel="stylesheet" href="../css2/level4.css">
+    <!--end-->
+</head>
+<body onload="startTime()">
+<header>
+    <div class="title clearfix">
+        <a href="#" class="logo"><img src="../img/logo1.png" alt="logo"></a>
+        <p>站点告警信息</p>
+        <div class="user">
+            <div class="denglu"></div>
+            <div class="username">admin</div>
+            <i></i>
+            <ul class="dropdown-menu">
+                <li><a href="#" id="forgetPsw_btn">进入控制台</a></li>
+                <li><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="time">
+        <span class="now-date">2017年11月26日</span><span class="now-time">18:24:56</span><span class="now-week">星期四</span>
+    </div>
+</header>
+<div class="container">
+    <div class="left-content">
+        <p class="i-title">告警信息</p>
+        <div class="main-tit">
+            <div class="waring-title">
+                <p class="waring-title3">三级告警</p>
+                <p class="waring-title2">二级告警</p>
+                <p class="waring-title1">一级告警</p>
+            </div>
+            <div class="table-box">
+                <table class="ai-table" id="ai_table">
+                    <thead>
+                    <tr><td>时间</td><td>站点名称</td><td>站点设备</td><td>告警信息</td><td>告警级别</td><td>告警操作</td></tr>
+                    </thead>
+                    <tbody class="ai-tbody">
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>其他负荷</td><td>设备故障</td><td class="waring1"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>充电桩</td><td>设备故障</td><td class="waring2"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>光伏</td><td>设备故障</td><td class="waring3"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>其他负荷</td><td>设备故障</td><td class="waring1"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>充电桩</td><td>设备故障</td><td class="waring1"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>光伏</td><td>设备故障</td><td class="waring2"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>其他负荷</td><td>设备故障</td><td class="waring2"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>充电桩</td><td>设备故障</td><td class="waring1"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>其他负荷</td><td>设备故障</td><td class="waring1"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>充电桩</td><td>设备故障</td><td class="waring2"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>光伏</td><td>设备故障</td><td class="waring2"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>其他负荷</td><td>设备故障</td><td class="waring1"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>充电桩</td><td>设备故障</td><td class="waring1"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>光伏</td><td>设备故障</td><td class="waring2"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>其他负荷</td><td>设备故障</td><td class="waring2"></td><td><a href="#">查看详情</a></td></tr>
+                    <tr><td>2017-8-28 &nbsp;14:37:53</td><td>上海国际汽车城嘉定站点</td><td>充电桩</td><td>设备故障</td><td class="waring1"></td><td><a href="#">查看详情</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="right-content">
+        <div class="r-top">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <div class="per-avatar"><img src="../img/avatar.png"></div>
+            <div class="per-info clearfix">
+                <p>姓名：<span>韩宁</span></p>
+                <p>工号：<span>20181688888</span></p>
+                <p>电话 :  <span>15020181688</span></p>
+                <p>职务 :  <span>高级技术总监</span></p>
+                <p>邮箱 :  <span>xxxxxx@163.com</span></p>
+            </div>
+        </div>
+        <div class="r-bot">
+            <p class="i-title">派单信息</p>
+            <div class="order-table">
+                <table>
+                    <thead>
+                    <tr><td>时间</td><td>指派人</td><td>指派信息</td><td>处理状态</td></tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>2018-01-08</br>12:23:54</td><td>韩宁</td><td>检查设备故障情况，及时联系业务人员。</td><td class="processing">处理中</td></tr>
+                    <tr><td>2018-01-08</br>12:23:54</td><td>指派人</td><td>指派信息</td><td class="processing">处理中</td></tr>
+                    <tr><td>2018-01-08</br>12:23:54</td><td>指派人</td><td>指派信息</td><td class="not-processed">未处理</td></tr>
+                    <tr><td>2018-01-08</br>12:23:54</td><td>指派人</td><td>指派信息</td><td class="completed">已完成</td></tr>
+                    <tr><td>2018-01-08</br>12:23:54</td><td>指派人</td><td>指派信息</td><td class="processing">处理中</td></tr>
+                    <tr><td>2018-01-08</br>12:23:54</td><td>指派人</td><td>指派信息</td><td class="not-processed">未处理</td></tr>
+                    <tr><td>2018-01-08</br>12:23:54</td><td>指派人</td><td>指派信息</td><td class="completed">已完成</td></tr>
+                    <tr><td>2018-01-08</br>12:23:54</td><td>指派人</td><td>指派信息</td><td class="processing">处理中</td></tr>
+                    <tr><td>2018-01-08</br>12:23:54</td><td>指派人</td><td>指派信息</td><td class="not-processed">未处理</td></tr>
+                    <tr><td>2018-01-08</br>12:23:54</td><td>指派人</td><td>指派信息</td><td class="completed">已完成</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" rel="script" src="../lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" rel="script">
+    //时间
+    function startTime() {
+        //年月日
+        var today=new Date();
+        var nYear = today.getFullYear();
+        var nMonth = today.getMonth()+1;
+        var nDay = today.getDate();
+        $('.now-date').html(nYear+'年'+nMonth+'月'+nDay+'日');
+        //星期
+        switch(today.getDay()){
+            case 1:
+                $('.now-week').html('星期一');
+                break;
+            case 2:
+                $('.now-week').html('星期二');
+                break;
+            case 3:
+                $('.now-week').html('星期三');
+                break;
+            case 4:
+                $('.now-week').html('星期四');
+                break;
+            case 5:
+                $('.now-week').html('星期五');
+                break;
+            case 6:
+                $('.now-week').html('星期六');
+                break;
+            case 7:
+                $('.now-week').html('星期天');
+                break;
+            default:
+                break;
+        }
+        //时分秒
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        m=checkTime(m);
+        s=checkTime(s);
+        $('.now-time').html(h+":"+m+":"+s);
+        t=setTimeout('startTime()',500);
+    }
+    function checkTime(i) {
+        if (i<10) {i="0" + i}
+        return i;
+    }
+    $(function () {
+        //控制台
+        $('.username').click(function(){
+            $('.dropdown-menu').slideToggle(150);
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>光储充能量管理与运维监控平台——第七层</title>
+    <link type="text/css" rel="stylesheet" href="../lib/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css2/com-header.css">
+    <link type="text/css" rel="stylesheet" href="../css2/level7.css">
+</head>
+<body onload="startTime()">
+<header>
+    <div class="title clearfix">
+        <a href="#" class="logo"><img src="../img/logo1.png" alt="logo"></a>
+        <p>资产管理</p>
+        <div class="user">
+            <div class="denglu"></div>
+            <div class="username">admin</div>
+            <i></i>
+            <ul class="dropdown-menu">
+                <li><a href="#" id="forgetPsw_btn">进入控制台</a></li>
+                <li><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="time">
+        <span class="now-date">2017年11月26日</span><span class="now-time">18:24:56</span><span class="now-week">星期四</span>
+    </div>
+</header>
+<div class="container">
+    <div class="left-content">
+        <p class="i-title">资产管理</p>
+        <div class="switch-site">
+            <label class="sel-site">切换站点：
+                <select>
+                    <option value="1">上海国际汽车城光储能嘉定站点1</option>
+                    <option value="2">上海国际汽车城光储能嘉定站点2</option>
+                    <option value="3">上海国际汽车城光储能嘉定站点3</option>
+                    <option value="4">上海国际汽车城光储能嘉定站点4</option>
+                    <option value="5">上海国际汽车城光储能嘉定站点5</option>
+                </select>
+            </label>
+            <button class="sw-btn">确定</button>
+        </div>
+        <div class="site-asset">
+            <div class="asset-box">
+                <div class="site-img">
+                    <img src="../img/site-img.png" alt="站点图片">
+                </div>
+                <!--转动的图层start-->
+                <div class="binggan-con">
+                    <div class="binggan-b">
+                        <div class="binggan"></div>
+                        <div class="binggan"></div>
+                        <div class="binggan"></div>
+                        <div class="binggan"></div>
+                    </div>
+                </div>
+                <!--转动的图层end-->
+                <div class="asset-lo">
+                </div>
+                <!--设备旋转start-->
+                <div class="gw-b">
+                    <div class="gw-group">
+                        <div class="gongwei gw-z2">
+                            <!--其他设备-->
+                            <a href="javascript:;" class="other1"><img src="../img/other1.png" alt="模型"></a>
+                        </div>
+                        <div class="gongwei gw-z1">
+                            <!--储能设备-->
+                            <a href="javascript:;" class="storage"><img class="cn" src="../img/cn11.png" alt="模型"></a>
+                        </div>
+                        <div class="gongwei gw-dq">
+                            <!--光伏设备-->
+                            <a href="javascript:;" class="photovoltaic"><img src="../img/menu1.png" alt="模型"></a>
+                        </div>
+                        <div class="gongwei gw-y1">
+                            <!--充电柱设备-->
+                            <a href="javascript:;" class="charge"><img src="../img/cdz1.png" alt="模型"></a>
+                        </div>
+                        <div class="gongwei gw-y2">
+                            <!--电表账单-->
+                            <a href="javascript:;" class="meter-bill"><img src="../img/meter-bill.png" alt="模型"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--设备旋转end-->
+            </div>
+        </div>
+    </div>
+    <div class="right-content">
+        <p class="i-title">产品信息</p>
+        <div class="asset-table">
+            <table>
+                <tbody>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称产品名称</td><td>光伏系统光伏系统</td></tr>
+                <tr><td>产品名称产品名称</td><td>光伏系统光伏系统</td></tr>
+                <tr><td>产品名称产品名称</td><td>光伏系统光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称产品名称</td><td>光伏系统光伏系统</td></tr>
+                <tr><td>产品名称产品名称</td><td>光伏系统光伏系统</td></tr>
+                <tr><td>产品名称产品名称</td><td>光伏系统光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                <tr><td>产品名称</td><td>光伏系统</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" rel="script" src="../lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" rel="script">
+    //时间
+    function startTime() {
+        //年月日
+        var today=new Date();
+        var nYear = today.getFullYear();
+        var nMonth = today.getMonth()+1;
+        var nDay = today.getDate();
+        $('.now-date').html(nYear+'年'+nMonth+'月'+nDay+'日');
+        //星期
+        switch(today.getDay()){
+            case 1:
+                $('.now-week').html('星期一');
+                break;
+            case 2:
+                $('.now-week').html('星期二');
+                break;
+            case 3:
+                $('.now-week').html('星期三');
+                break;
+            case 4:
+                $('.now-week').html('星期四');
+                break;
+            case 5:
+                $('.now-week').html('星期五');
+                break;
+            case 6:
+                $('.now-week').html('星期六');
+                break;
+            case 7:
+                $('.now-week').html('星期天');
+                break;
+            default:
+                break;
+        }
+        //时分秒
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        m=checkTime(m);
+        s=checkTime(s);
+        $('.now-time').html(h+":"+m+":"+s);
+        t=setTimeout('startTime()',500);
+    }
+    function checkTime(i) {
+        if (i<10) {i="0" + i}
+        return i;
+    }
+    $(function () {
+        //控制台
+        $('.username').click(function(){
+            $('.dropdown-menu').slideToggle(150);
+        });
+    });
+
+    $(".gongwei").clone(true).prop("class","gongwei gw-qt").prependTo(".gw-group");
+
+    /*左右两边第一个位置点击切换一个位置*/
+    $(".gongwei").clone(true).prop("class","gongwei gw-qt").prependTo(".gw-group");
+
+    $(".gw-group").on("click",'.gw-z1,.gw-y1',function(){
+        var theNum = $(this).index();
+        var lenNum = $(".gongwei").length;
+        $(".gongwei").removeClass('gw-dq gw-y1 gw-y2 gw-z1 gw-z2').addClass('gw-qt');
+        $(this).removeClass('gw-qt').addClass('gw-dq');
+        $(".gongwei").eq((theNum+1) % lenNum).removeClass('gw-qt').addClass('gw-y1');
+        $(".gongwei").eq((theNum+2) % lenNum).removeClass('gw-qt').addClass('gw-y2');
+        $(".gongwei").eq(theNum-1).removeClass('gw-qt').addClass('gw-z1');
+        $(".gongwei").eq(theNum-2).removeClass('gw-qt').addClass('gw-z2');
+    });
+    /*右边第二个位置点击切换两次位置*/
+    $(".gw-group").on("click",'.gw-y2',function(){
+        var theNum = $(this).index();
+        var lenNum = $(".gongwei").length;
+        var theT = $(this);
+        $(".gongwei").css('transition','all .4s linear').removeClass('gw-dq gw-y1 gw-y2 gw-z1 gw-z2').addClass('gw-qt');
+
+        $(this).removeClass('gw-qt').addClass('gw-y1');
+        $(".gongwei").eq((theNum+1) % lenNum).removeClass('gw-qt').addClass('gw-y2');
+        $(".gongwei").eq(theNum-1).removeClass('gw-qt').addClass('gw-dq');
+        $(".gongwei").eq(theNum-2).removeClass('gw-qt').addClass('gw-z1');
+        $(".gongwei").eq(theNum-3).removeClass('gw-qt').addClass('gw-z2');
+        function stepT(){
+            $(".gongwei").removeClass('gw-dq gw-y1 gw-y2 gw-z1 gw-z2').addClass('gw-qt');
+            theT.removeClass('gw-qt').addClass('gw-dq');
+            $(".gongwei").eq((theNum+1) % lenNum).removeClass('gw-qt').addClass('gw-y1');
+            $(".gongwei").eq((theNum+2) % lenNum).removeClass('gw-qt').addClass('gw-y2');
+            $(".gongwei").eq(theNum-1).removeClass('gw-qt').addClass('gw-z1');
+            $(".gongwei").eq(theNum-2).removeClass('gw-qt').addClass('gw-z2');
+        }
+        setTimeout(stepT,400);
+        setTimeout(function(){
+            $(".gongwei").css('transition','all .6s linear');
+        },1000);
+    });
+    /*左边第二个位置点击切换两次位置*/
+    $(".gw-group").on("click",'.gw-z2',function(){
+        var theNum = $(this).index();
+        var lenNum = $(".gongwei").length;
+        var theT = $(this);
+        $(".gongwei").css('transition','all .4s linear').removeClass('gw-dq gw-y1 gw-y2 gw-z1 gw-z2').addClass('gw-qt');
+
+        $(this).removeClass('gw-qt').addClass('gw-z1');
+        $(".gongwei").eq((theNum+1) % lenNum).removeClass('gw-qt').addClass('gw-dq');
+        $(".gongwei").eq((theNum+2) % lenNum).removeClass('gw-qt').addClass('gw-y1');
+        $(".gongwei").eq((theNum+3) % lenNum).removeClass('gw-qt').addClass('gw-y2');
+        $(".gongwei").eq(theNum-1).removeClass('gw-qt').addClass('gw-z2');
+        function stepT(){
+            $(".gongwei").removeClass('gw-dq gw-y1 gw-y2 gw-z1 gw-z2').addClass('gw-qt');
+            theT.removeClass('gw-qt').addClass('gw-dq');
+            $(".gongwei").eq((theNum+1) % lenNum).removeClass('gw-qt').addClass('gw-y1');
+            $(".gongwei").eq((theNum+2) % lenNum).removeClass('gw-qt').addClass('gw-y2');
+            $(".gongwei").eq(theNum-1).removeClass('gw-qt').addClass('gw-z1');
+            $(".gongwei").eq(theNum-2).removeClass('gw-qt').addClass('gw-z2');
+//            console.log(theNum,lenNum)
+        }
+        setTimeout(stepT,400);
+        setTimeout(function(){
+            $(".gongwei").css('transition','all .6s linear');
+        },1000);
+    });
+
+    /*其他设备*/
+    $('.other1').on('click',function () {
+        console.log('other1');
+    });
+    /*储能设备*/
+    $('.storage').on('click',function () {
+        console.log('storage');
+    });
+    /*充电柱设备*/
+    $('.charge').on('click',function () {
+        console.log('charge');
+    });
+    /*光伏设备*/
+    $('.photovoltaic').on('click',function () {
+        console.log('photovoltaic');
+    });
+    /*电表账单*/
+    $('.meter-bill').on('click',function () {
+        console.log('meter-bill');
+    });
+</script>
+</body>
+</html>

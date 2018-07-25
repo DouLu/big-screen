@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>光储充能量管理与运维监控平台——第三层</title>
+    <link type="text/css" rel="stylesheet" href="../lib/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css2/level3.css">
+</head>
+<body onload="startTime()">
+<header>
+    <div class="title clearfix">
+        <a href="#" class="logo"><img src="../img/logo1.png" alt="logo"></a>
+        <p>设备管理</p>
+        <div class="user">
+            <div class="denglu"></div>
+            <div class="username">admin</div>
+            <i></i>
+            <ul class="dropdown-menu">
+                <li><a href="#" id="forgetPsw_btn">进入控制台</a></li>
+                <li><a href="#">退出</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="time">
+        <span class="now-date">2017年11月26日</span><span class="now-time">18:24:56</span><span class="now-week">星期四</span>
+    </div>
+</header>
+<div class="container">
+    <div class="top-con">
+        <div class="t-left">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <div class="main" style="padding: 15px 10px;">
+                <p class="i-title">基本信息</p>
+                <ul class="sys-data clearfix">
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon1.png" alt="图标">光伏装机容量：</p>
+                            <div>98.32KW</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon2.png" alt="图标">组件类型：</p>
+                            <div>双波</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon3.png" alt="图标">组件物理参数：</p>
+                            <div>尺寸／厚度／重量／可抗风性</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon4.png" alt="图标">系统电压：</p>
+                            <div>100V</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon5.png" alt="图标">组件功率：</p>
+                            <div>1000W</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon6.png" alt="图标">逆变器数量：</p>
+                            <div>7</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon1.png" alt="图标">光伏装机容量：</p>
+                            <div>98.32KW</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon2.png" alt="图标">组件类型：</p>
+                            <div>双波</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon3.png" alt="图标">组件物理参数：</p>
+                            <div>尺寸／厚度／重量／可抗风性</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon4.png" alt="图标">系统电压：</p>
+                            <div>100V</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon5.png" alt="图标">组件功率：</p>
+                            <div>1000W</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sys-data-item">
+                            <p><img src="../img/l3-icon6.png" alt="图标">逆变器数量：</p>
+                            <div>7</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="t-right">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <div class="main clearfix">
+                <div class="pv-data">
+                    <p class="i-title">光伏累计发电量</p>
+                    <div class="real-data">
+                        <div class="sig-data">
+                            <p>储能量</p>
+                            <p>1234,682</p>
+                            <p>KW/h</p>
+                        </div>
+                    </div>
+                </div>
+                <!--各月发电量统计图表-->
+                <div class="chart-con">
+                    <img src="../img/l3-1.png" alt="图表" style="width: 100%;height: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mid-con">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <!--历史曲线-->
+        <div class="main">
+            <img src="../img/d1.png" alt="图表" style="width: 100%;height: 100%;">
+        </div>
+    </div>
+    <div class="bot-con">
+        <div class="b-left">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <div class="main clearfix">
+                <div class="pv-data">
+                    <p class="i-title">实时数据</p>
+                    <div class="real-data">
+                        <div class="eng-data">
+                            <div>
+                                <p>储能量</p>
+                                <p>1234,682</p>
+                                <p>KW/h</p>
+                            </div>
+                        </div>
+                        <div class="eng-data">
+                            <div>
+                                <p>释放量</p>
+                                <p>4356,682</p>
+                                <p>KW/h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--运行状态统计图表-->
+                <div class="chart-con">
+                    <img src="../img/l3-3.png" alt="图表" style="width: 90%;height: 90%;margin: 5%;">
+                </div>
+            </div>
+        </div>
+        <div class="b-center">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+            <!--产品用量预测图表-->
+            <div class="main">
+                <img src="../img/l3-2.png" alt="图表" style="width: 100%;height: 100%;">
+            </div>
+        </div>
+        <div class="b-right">
+            <p class="i-title">告警信息</p>
+            <div class="main-tit">
+                <div class="waring-title">
+                    <p class="waring-title3">三级告警</p>
+                    <p class="waring-title2">二级告警</p>
+                    <p class="waring-title1">一级告警</p>
+                </div>
+                <div class="table-box">
+                    <table class="ai-table" id="ai_table">
+                        <thead>
+                        <tr><td>时间</td><td>站点设备</td><td>告警信息</td><td>告警级别</td></tr>
+                        </thead>
+                        <tbody class="ai-tbody">
+                        <tr><td>2017-8-28 14:37:53</td><td>其他负荷</td><td>设备故障</td><td class="waring1"></td></tr>
+                        <tr><td>2017-8-28 14:37:53</td><td>充电桩</td><td>设备故障</td><td class="waring2"></td></tr>
+                        <tr><td>2017-8-28 14:37:53</td><td>光伏</td><td>设备故障</td><td class="waring3"></td></tr>
+                        <tr><td>2017-8-28 14:37:53</td><td>其他负荷</td><td>设备故障</td><td class="waring1"></td></tr>
+                        <tr><td>2017-8-28 14:37:53</td><td>充电桩</td><td>设备故障</td><td class="waring1"></td></tr>
+                        <tr><td>2017-8-28 14:37:53</td><td>光伏</td><td>设备故障</td><td class="waring2"></td></tr>
+                        <tr><td>2017-8-28 14:37:53</td><td>其他负荷</td><td>设备故障</td><td class="waring2"></td></tr>
+                        <tr><td>2017-8-28 14:37:53</td><td>充电桩</td><td>设备故障</td><td class="waring1"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" rel="script" src="../lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" rel="script">
+    //时间
+    function startTime() {
+        //年月日
+        var today=new Date();
+        var nYear = today.getFullYear();
+        var nMonth = today.getMonth()+1;
+        var nDay = today.getDate();
+        $('.now-date').html(nYear+'年'+nMonth+'月'+nDay+'日');
+        //星期
+        switch(today.getDay()){
+            case 1:
+                $('.now-week').html('星期一');
+                break;
+            case 2:
+                $('.now-week').html('星期二');
+                break;
+            case 3:
+                $('.now-week').html('星期三');
+                break;
+            case 4:
+                $('.now-week').html('星期四');
+                break;
+            case 5:
+                $('.now-week').html('星期五');
+                break;
+            case 6:
+                $('.now-week').html('星期六');
+                break;
+            case 7:
+                $('.now-week').html('星期天');
+                break;
+            default:
+                break;
+        }
+        //时分秒
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        m=checkTime(m);
+        s=checkTime(s);
+        $('.now-time').html(h+":"+m+":"+s);
+        t=setTimeout('startTime()',500);
+    }
+    function checkTime(i) {
+        if (i<10) {i="0" + i}
+        return i;
+    }
+    $(function () {
+        //控制台
+        $('.username').click(function(){
+            $('.dropdown-menu').slideToggle(150);
+        });
+    });
+    tf_scroll();
+    /*告警信息滚动,判断是否滚动*/
+    function tf_scroll(){
+        var tf = parseInt($('.ai-tbody').css('height'))>parseInt($('.ai-table').css('height'));
+        if(tf){
+            $(function(){
+                var $this = $("#ai_table");
+                var scrollTimer;
+                $this.hover(function() {
+                    clearInterval(scrollTimer);
+                }, function() {
+                    scrollTimer = setInterval(function() {
+                        scrollNews($this);
+                    }, 1000);
+                }).trigger("mouseleave");
+
+                function scrollNews(obj) {
+                    var $self = obj.find("tbody");
+                    var lineHeight = $self.find("tr:first").height();
+                    $self.animate({
+                        "marginTop": -lineHeight + "px"
+                    }, 1000, function() {
+                        $self.css({
+                            marginTop: 0
+                        }).find("tr:first").appendTo($self);
+                    })
+                }
+            });
+        }
+    }
+
+    /*sys-data*/
+    var liH = $('.sys-data').height();
+    $('.sys-data').find('li').height(liH/2);
+    $(window).resize(function() {
+        var liH = $('.sys-data').height();
+        $('.sys-data').find('li').height(liH/2);
+    });
+</script>
+</body>
+</html>

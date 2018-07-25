@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--页面渲染属性设置-->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>交易结算</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="光充储能量管理与运维监控平台">
+    <meta name="description" content="光充储能量管理与运维监控平台">
+    <meta property="og:title" content="光充储能量管理与运维监控平台">
+    <meta property="og:description" content="光充储能量管理与运维监控平台">
+    <!--end-->
+    <!--页面样式文件-->
+    <link type="text/css" rel="stylesheet" href="../lib/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css/com-style.css">
+    <link type="text/css" rel="stylesheet" href="../css/transaction-settlement.css">
+    <!--end-->
+</head>
+<body onload="startTime()">
+<div class="head">
+    <header class="clearfix">
+        <a href="index.html" class="logo"><img src="../img/logo.png" alt="logo"></a>
+        <div class="site-name"></div>
+        <div class="head-right">
+            <div class="time">
+                <span class="now-date">2017年11月26日</span><span class="now-time">18:24:56</span><span class="now-week">星期四</span>
+            </div>
+            <div class="user">
+                <div class="denglu"></div>
+                <div class="username">控制台</div>
+                <i></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#" id="forgetPsw_btn">进入控制台</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <a href="javascript:;" class="siteA"><span>站点A</span></a>
+        <a href="javascript:;" class="siteB"><span>站点B</span></a>
+    </div>
+</div>
+<!--站点A-->
+<div id="siteA" class="container">
+    <div class="con-top">
+        <div class="query">
+            <label>时间：
+                <input type="text" id="startTime" placeholder="开始时间">
+                <input type="text" id="endTime" placeholder="结束时间">
+            </label>
+            <button class="query-btn">查询</button>
+        </div>
+        <div class="query-table">
+            <table>
+                <tbody>
+                <tr><td></td><td>峰</td><td>谷</td><td>总计</td></tr>
+                <tr><td>买电量</td><td>100KW</td><td>80KW</td><td>180KW</td></tr>
+                <tr><td>卖电量</td><td>200KW</td><td>100KW</td><td>300KW</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="bot-left">
+        <p class="title">当天交易：</p>
+        <div class="table-box">
+            <table>
+                <tbody>
+                <tr><td></td><td>峰</td><td>谷</td><td>总计</td></tr>
+                <tr>
+                    <td>光伏</td>
+                    <td colspan="2">
+                        <!--卖电量 24个span标签表示24小时-->
+                        <div class="sell-num">
+                            <!--<p class="number-box">100KW</p>-->
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <!--买电量 24个span标签表示24小时-->
+                        <div class="buy-num">
+                            <p class="number-box">59kw</p>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </td>
+                    <td>159KW</td>
+                </tr>
+                <tr>
+                    <td>储能</td>
+                    <td colspan="2">
+                        <!--卖电量 24个span标签表示24小时-->
+                        <div class="sell-num">
+                            <p class="number-box">100KW</p>
+                            <span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span>
+                            <span class="sell-have"></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <!--买电量 24个span标签表示24小时-->
+                        <div class="buy-num">
+                            <p class="number-box">59kw</p>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </td>
+                    <td>159KW</td>
+                </tr>
+                <tr>
+                    <td>电网</td>
+                    <td colspan="2">
+                        <!--卖电量 24个span标签表示24小时-->
+                        <div class="sell-num">
+                            <p class="number-box">100KW</p>
+                            <span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span>
+                            <span class="sell-have"></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <!--买电量 24个span标签表示24小时-->
+                        <div class="buy-num">
+                            <!--<p class="number-box">59kw</p>-->
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </td>
+                    <!--6：00到22：00  12个span标签代表12个小时 有数值的加上对应类名-->
+                    <!-- <td>
+                         &lt;!&ndash;卖电量&ndash;&gt;
+                         <div class="sell-num">
+                             <p class="number-box">100KW</p>
+                             <span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span>
+                             <span class="sell-have"></span><span></span><span></span><span></span>
+                             <span></span><span></span><span></span><span></span>
+                         </div>
+                         &lt;!&ndash;买电量&ndash;&gt;
+                         <div class="buy-num">
+                             <p class="number-box">59kw</p>
+                             <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                             <span></span><span></span><span></span><span></span>
+                             <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                         </div>
+                     </td>-->
+                    <!--22：00到6：00  12个span标签代表12个小时  有数值的加上对应类名-->
+                    <!--<td>
+                        &lt;!&ndash;卖电量&ndash;&gt;
+                        <div class="sell-num">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        &lt;!&ndash;买电量&ndash;&gt;
+                        <div class="buy-num">
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                        </div>
+                    </td>-->
+                    <td>159KW</td>
+                </tr>
+                <tr>
+                    <!--时间刻度  当峰谷时间改变时，将类名移动到对应的刻度上-->
+                    <td></td>
+                    <td colspan="2">
+                        <div class="time-scale">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span class="peak-valley"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="legend">
+            <span class="buy-q">买电量</span>
+            <span class="sell-q">卖电量</span>
+        </div>
+    </div>
+    <div class="bot-right">
+        <p class="title">电量交易趋势：</p>
+        <div class="chart-box">
+            <img src="../img/ts1.png" alt="">
+        </div>
+        <div class="legend">
+            <span class="buy-l">买电量</span>
+            <span class="sell-l">卖电量</span>
+        </div>
+    </div>
+</div>
+<!--站点B-->
+<div id="siteB" class="container">
+    <div class="con-top">
+        <div class="query">
+            <label>时间：
+                <input type="text" id="startTime1" placeholder="开始时间">
+                <input type="text" id="endTime1" placeholder="结束时间">
+            </label>
+            <button class="query-btn">查询</button>
+        </div>
+        <div class="query-table">
+            <table>
+                <tbody>
+                <tr><td></td><td>峰</td><td>谷</td><td>总计</td></tr>
+                <tr><td>买电量</td><td>100KW</td><td>80KW</td><td>180KW</td></tr>
+                <tr><td>卖电量</td><td>200KW</td><td>100KW</td><td>300KW</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="bot-left">
+        <p class="title">当天交易：</p>
+        <div class="table-box">
+            <table>
+                <tbody>
+                <tr><td></td><td>峰</td><td>谷</td><td>总计</td></tr>
+                <tr>
+                    <td>光伏</td>
+                    <!--6：00到22：00  12个span标签代表12个小时 有数值的加上对应类名-->
+                    <td>
+                        <!--卖电量-->
+                        <div class="sell-num">
+                            <p class="number-box">100KW</p>
+                            <span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span>
+                            <span class="sell-have"></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <!--买电量-->
+                        <div class="buy-num">
+                            <p class="number-box">59kw</p>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                        </div>
+                    </td>
+                    <!--22：00到6：00  12个span标签代表12个小时  有数值的加上对应类名-->
+                    <td>
+                        <!--卖电量-->
+                        <div class="sell-num">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <!--买电量-->
+                        <div class="buy-num">
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                        </div>
+                    </td>
+                    <td>159KW</td>
+                </tr>
+                <tr>
+                    <td>储能</td>
+                    <!--6：00到22：00  12个span标签代表12个小时 有数值的加上对应类名-->
+                    <td>
+                        <!--卖电量-->
+                        <div class="sell-num">
+                            <p class="number-box">100KW</p>
+                            <span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span>
+                            <span class="sell-have"></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <!--买电量-->
+                        <div class="buy-num">
+                            <p class="number-box">59kw</p>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                        </div>
+                    </td>
+                    <!--22：00到6：00  12个span标签代表12个小时  有数值的加上对应类名-->
+                    <td>
+                        <!--卖电量-->
+                        <div class="sell-num">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <!--买电量-->
+                        <div class="buy-num">
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                        </div>
+                    </td>
+                    <td>159KW</td>
+                </tr>
+                <tr>
+                    <td>电网</td>
+                    <!--6：00到22：00  12个span标签代表12个小时 有数值的加上对应类名-->
+                    <td>
+                        <!--卖电量-->
+                        <div class="sell-num">
+                            <p class="number-box">100KW</p>
+                            <span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span><span class="sell-have"></span>
+                            <span class="sell-have"></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <!--买电量-->
+                        <div class="buy-num">
+                            <p class="number-box">59kw</p>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                        </div>
+                    </td>
+                    <!--22：00到6：00  12个span标签代表12个小时  有数值的加上对应类名-->
+                    <td>
+                        <!--卖电量-->
+                        <div class="sell-num">
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <!--买电量-->
+                        <div class="buy-num">
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                            <span></span><span></span><span></span><span></span>
+                            <span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span><span class="buy-have"></span>
+                        </div>
+                    </td>
+                    <td>159KW</td>
+                </tr>
+                <tr>
+                    <!--时间刻度-->
+                    <td></td><td></td><td></td><td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="legend">
+            <span class="buy-q">买电量</span>
+            <span class="sell-q">卖电量</span>
+        </div>
+    </div>
+    <div class="bot-right">
+        <p class="title">电量交易趋势：</p>
+        <div class="chart-box">
+            <img src="../img/ts1.png" alt="">
+        </div>
+        <div class="legend">
+            <span class="buy-l">买电量</span>
+            <span class="sell-l">卖电量</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" rel="script" src="../lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" rel="script" src="../lib/laydate.js"></script>
+<script type="text/javascript" rel="script">
+    //时间
+    function startTime() {
+        //年月日
+        var today=new Date();
+        var nYear = today.getFullYear();
+        var nMonth = today.getMonth()+1;
+        var nDay = today.getDate();
+        $('.now-date').html(nYear+'年'+nMonth+'月'+nDay+'日');
+        //星期
+        switch(today.getDay()){
+            case 1:
+                $('.now-week').html('星期一');
+                break;
+            case 2:
+                $('.now-week').html('星期二');
+                break;
+            case 3:
+                $('.now-week').html('星期三');
+                break;
+            case 4:
+                $('.now-week').html('星期四');
+                break;
+            case 5:
+                $('.now-week').html('星期五');
+                break;
+            case 6:
+                $('.now-week').html('星期六');
+                break;
+            case 7:
+                $('.now-week').html('星期天');
+                break;
+            default:
+                break;
+        }
+        //时分秒
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        m=checkTime(m);
+        s=checkTime(s);
+        $('.now-time').html(h+":"+m+":"+s);
+        t=setTimeout('startTime()',500);
+    }
+    function checkTime(i) {
+        if (i<10) {i="0" + i}
+        return i;
+    }
+    $(function () {
+        //控制台
+        $('.username').click(function(){
+            $('.dropdown-menu').slideToggle(150);
+        });
+    });
+
+    //时间插件
+    laydate.render({
+        elem: '#startTime'
+    });
+    laydate.render({
+        elem: '#endTime'
+    });
+    laydate.render({
+        elem: '#startTime1'
+    });
+    laydate.render({
+        elem: '#endTime1'
+    });
+
+    //站点切换
+    $('.siteA').on('click',function () {
+        $('#siteA').show();
+        $('#siteB').hide();
+    });
+    $('.siteB').on('click',function () {
+        $('#siteB').show();
+        $('#siteA').hide();
+    });
+</script>
+</body>
+</html>
